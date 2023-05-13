@@ -8,7 +8,7 @@ import { AuthService } from './auth.service';
 export class AuthController {
   constructor(private authServise: AuthService) {}
 
-  @ApiOperation({ summary: 'Аутентификация пользователя' })
+  @ApiOperation({ summary: 'Авторизация пользователя' })
   @ApiResponse({ status: 200 })
   @Post('/login')
   login(@Body() userDto: CreateUserDto) {
